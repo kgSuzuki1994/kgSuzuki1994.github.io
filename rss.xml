@@ -8,7 +8,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>SuzuTech</title>
-        <link>https://kgSuzuki1994.github.io//</link>
+        <link>https://kgSuzuki1994.github.io/</link>
         <description>MemE is a powerful and highly customizable GoHugo theme for personal blogs.</description>
         <generator>Hugo 0.70.0 https://gohugo.io/</generator>
         
@@ -23,15 +23,121 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Mon, 18 May 2020 00:18:05 &#43;0900</lastBuildDate>
+        <lastBuildDate>Tue, 19 May 2020 15:21:32 &#43;0900</lastBuildDate>
         
-            <atom:link rel="self" type="application/rss&#43;xml" href="https://kgSuzuki1994.github.io//rss.xml" />
+            <atom:link rel="self" type="application/rss&#43;xml" href="https://kgSuzuki1994.github.io/rss.xml" />
         
         
             <item>
+                <title>【C#】ThreadPoolを用いた非同期プログラミング</title>
+                <link>https://kgSuzuki1994.github.io/posts/csharp-threadpool/</link>
+                <guid isPermaLink="true">https://kgSuzuki1994.github.io/posts/csharp-threadpool/</guid>
+                <pubDate>Mon, 18 May 2020 22:03:16 &#43;0900</pubDate>
+                
+                    <author>reuixiy@gmail.com (reuixiy)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;C#で非同期プログラムを実装する場合、以下の4つの方法が用いられることが一般的です。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Threadクラス
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-thread/&#34;&gt;【C#】Threadクラスを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ThreadPool
+&lt;ul&gt;
+&lt;li&gt;この記事&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Task&lt;/li&gt;
+&lt;li&gt;async await&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;今回はThreadPoolを使った非同期プログラムの実装方法を紹介します。&lt;/p&gt;
+&lt;h2 id=&#34;threadpoolの実装&#34;&gt;ThreadPoolの実装&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-thread/&#34;&gt;Threadクラスを用いた非同期プログラミング&lt;/a&gt;で作成したプログラムを修正してThreadPoolを実装します。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Form1.cs&lt;/code&gt;を以下のように変更します。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c#:Form1.cs&#34; data-lang=&#34;c#:Form1.cs&#34;&gt;&lt;span class=&#34;k&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;button1_Click&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;object&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sender&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;EventArgs&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Threading&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ThreadPool&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;QueueUserWorkItem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GetData&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+
+&lt;span class=&#34;k&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GetData&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;object&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;o&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;kt&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;result&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;List&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DTO&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;();&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;++)&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+        &lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Threading&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Thread&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Sleep&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+        &lt;span class=&#34;n&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Add&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;DTO&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ToString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(),&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Data&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+
+    &lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Invoke&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Action&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;delegate&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+        &lt;span class=&#34;n&#34;&gt;dataGridView1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DataSource&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;});&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;code&gt;System.Threading.ThreadPool.QueueUserWorkItem()&lt;/code&gt;の引数には、&lt;code&gt;void型&lt;/code&gt;で引数が&lt;code&gt;object&lt;/code&gt;のものが指定されている必要があります。&lt;br&gt;
+なので、&lt;code&gt;GetData&lt;/code&gt;クラスの引数に&lt;code&gt;object&lt;/code&gt;を指定しました。&lt;/p&gt;
+&lt;p&gt;上記のように実装すればThreadPoolを使用する事ができます。&lt;br&gt;
+Threadクラスを使うより比較的簡単に実装ができると思います。&lt;/p&gt;
+&lt;p&gt;これがThreadPoolを用いた非同期プログラムの実装です。&lt;/p&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://kgSuzuki1994.github.io/categories/tech/">Tech</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
                 <title>【C#】Threadクラスを用いた非同期プログラミング</title>
-                <link>https://kgSuzuki1994.github.io//posts/csharp-thread/</link>
-                <guid isPermaLink="true">https://kgSuzuki1994.github.io//posts/csharp-thread/</guid>
+                <link>https://kgSuzuki1994.github.io/posts/csharp-thread/</link>
+                <guid isPermaLink="true">https://kgSuzuki1994.github.io/posts/csharp-thread/</guid>
                 <pubDate>Sun, 17 May 2020 21:48:43 &#43;0900</pubDate>
                 
                     <author>reuixiy@gmail.com (reuixiy)</author>
@@ -41,8 +147,16 @@
                     <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;C#で非同期プログラムを実装する場合、以下の4つの方法が用いられることが一般的です。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Threadクラス&lt;/li&gt;
-&lt;li&gt;ThreadPool&lt;/li&gt;
+&lt;li&gt;Threadクラス
+&lt;ul&gt;
+&lt;li&gt;この記事&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ThreadPool
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-threadpool/&#34;&gt;【C#】ThreadPoolを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Task&lt;/li&gt;
 &lt;li&gt;async await&lt;/li&gt;
 &lt;/ol&gt;
@@ -187,7 +301,7 @@
                                 
                                 
                                 
-                                    <category domain="https://kgSuzuki1994.github.io//categories/tech/">Tech</category>
+                                    <category domain="https://kgSuzuki1994.github.io/categories/tech/">Tech</category>
                                 
                             
                         
