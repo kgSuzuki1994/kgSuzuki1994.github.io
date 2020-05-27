@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Wed, 27 May 2020 23:11:27 &#43;0900</lastBuildDate>
+        <lastBuildDate>Wed, 27 May 2020 23:46:09 &#43;0900</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://kgSuzuki1994.github.io/rss.xml" />
         
@@ -92,7 +92,7 @@ f51f058 add chapter1
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;今回は「add 2」というメッセージを「add chapter2」に修正するとします。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;gir rebase -i&lt;/code&gt;では、引数にリベース先となるコミットを指定する必要があるので、コミットログを修正したいコミットの&lt;strong&gt;1つ前のコミットを引数で指定&lt;/strong&gt;します。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gir rebase -i&lt;/code&gt;では、引数にリベース先となるコミットを指定する必要があるので、コミットログを修正したいコミットの&lt;MARK&gt;1つ前のコミットを引数で指定&lt;/MARK&gt;します。&lt;/p&gt;
 &lt;p&gt;1つ前のコミットである&lt;code&gt;f51f058&lt;/code&gt;を引数にしてコマンドを実行します。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

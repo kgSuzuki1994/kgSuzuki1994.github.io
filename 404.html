@@ -4,35 +4,6 @@
     <meta charset="UTF-8" />
 
     <meta name="generator" content="Hugo 0.70.0" /><meta name="theme-color" content="#fff" />
-        <script>
-            const userPrefers = localStorage.getItem('theme');
-            const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-            const lightModeMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
-            if (userPrefers === 'dark') {
-                changeModeMeta('dark');
-            } else if (userPrefers === 'light') {
-                changeModeMeta('light');
-            } else if (darkModeMediaQuery.matches) {
-                changeModeMeta('dark');
-            } else if (lightModeMediaQuery.matches) {
-                changeModeMeta('light');
-            }
-            function changeModeMeta(theme) {
-                document.documentElement.setAttribute('data-theme', theme);
-                if (theme === 'dark') {
-                    changeThemeColor('#16171d');
-                } else {
-                    changeThemeColor('#fff');
-                }
-            }
-            function changeThemeColor(themeColor) {
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColor);
-            }
-        </script>
-
-    
-
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
@@ -44,6 +15,10 @@
     <title>404 Page not found | SuzuTech</title>
 
     <link rel="stylesheet" href="/css/meme.min.css" />
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js" defer></script><script src="/js/meme.min.js"></script>
+
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -70,6 +45,7 @@
 
     
     <link rel="canonical" href="https://kgSuzuki1994.github.io/404.html" />
+    
 
 <script type="application/ld+json">
     {

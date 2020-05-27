@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja-jp">
     <title type="text">SuzuTech</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2020-05-27T23:11:27&#43;09:00</updated>
+    <updated>2020-05-27T23:46:09&#43;09:00</updated>
     <id>https://kgSuzuki1994.github.io/</id>
     <link rel="alternate" type="text/html" href="https://kgSuzuki1994.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://kgSuzuki1994.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">【Git】過去のコミットログを修正する方法</title>
             <link rel="alternate" type="text/html" href="https://kgSuzuki1994.github.io/posts/git-fixpastcommit/" />
             <id>https://kgSuzuki1994.github.io/posts/git-fixpastcommit/</id>
-            <updated>2020-05-27T23:10:12&#43;09:00</updated>
+            <updated>2020-05-27T23:27:57&#43;09:00</updated>
             <published>2020-05-27T22:21:35&#43;09:00</published>
             <author>
                     <name>reuixiy</name>
@@ -83,7 +83,7 @@ f51f058 add chapter1
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;今回は「add 2」というメッセージを「add chapter2」に修正するとします。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;gir rebase -i&lt;/code&gt;では、引数にリベース先となるコミットを指定する必要があるので、コミットログを修正したいコミットの&lt;strong&gt;1つ前のコミットを引数で指定&lt;/strong&gt;します。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gir rebase -i&lt;/code&gt;では、引数にリベース先となるコミットを指定する必要があるので、コミットログを修正したいコミットの&lt;MARK&gt;1つ前のコミットを引数で指定&lt;/MARK&gt;します。&lt;/p&gt;
 &lt;p&gt;1つ前のコミットである&lt;code&gt;f51f058&lt;/code&gt;を引数にしてコマンドを実行します。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
