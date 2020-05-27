@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja-jp">
     <title type="text">SuzuTech</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2020-05-27T23:46:09&#43;09:00</updated>
+    <updated>2020-05-28T00:25:38&#43;09:00</updated>
     <id>https://kgSuzuki1994.github.io/</id>
     <link rel="alternate" type="text/html" href="https://kgSuzuki1994.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://kgSuzuki1994.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">【Git】過去のコミットログを修正する方法</title>
             <link rel="alternate" type="text/html" href="https://kgSuzuki1994.github.io/posts/git-fixpastcommit/" />
             <id>https://kgSuzuki1994.github.io/posts/git-fixpastcommit/</id>
-            <updated>2020-05-27T23:27:57&#43;09:00</updated>
+            <updated>2020-05-28T00:24:55&#43;09:00</updated>
             <published>2020-05-27T22:21:35&#43;09:00</published>
             <author>
                     <name>reuixiy</name>
@@ -239,7 +239,7 @@ Once you are satisfied with your changes, run
 &lt;/div&gt;&lt;p&gt;あとはファイルの修正を行い、&lt;code&gt;git rebase --continue&lt;/code&gt;でログの修正は完了です。&lt;/p&gt;
 &lt;h4 id=&#34;参考にしたサイト&#34;&gt;参考にしたサイト&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.atlassian.com/ja/git/tutorials/rewriting-history&#34;&gt;7.6 Git のさまざまなツール - 歴史の書き換え - Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E6%AD%B4%E5%8F%B2%E3%81%AE%E6%9B%B8%E3%81%8D%E6%8F%9B%E3%81%88&#34;&gt;7.6 Git のさまざまなツール - 歴史の書き換え - Git&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content>
             
             
