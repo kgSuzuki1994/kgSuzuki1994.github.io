@@ -12,7 +12,7 @@
     
     <meta http-equiv="Cache-Control" content="no-siteapp" />
 
-    <title>【C#】ThreadPoolを用いた非同期プログラミング | SuzuTech</title>
+    <title>【Csharp】ThreadPoolを用いた非同期プログラミング | SuzuTech</title>
 
     <link rel="stylesheet" href="/css/meme.min.css" />
 
@@ -26,7 +26,7 @@
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM&#43;Plex&#43;Serif:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Comfortaa:wght@700&amp;display=swap" /></noscript>
 
     <meta name="author" content="reuixiy" /><meta name="description" content="はじめに C#で非同期プログラムを実装する場合、以下の4つの方法が用いられることが一般的です。
- Threadクラス  【C#】Threadクラスを用いた非同期プログラミング   ThreadPool  この記事   Task  【C#】Taskを用いた非同期プログラミング   async await  【C#】asyncとawaitを用いた非同期プログラミング    今回はThreadPoolを使った非同期プログラムの実装方法を紹介します。
+ Threadクラス  【Csharp】Threadクラスを用いた非同期プログラミング   ThreadPool  この記事   Task  【Csharp】Taskを用いた非同期プログラミング   async await  【Csharp】asyncとawaitを用いた非同期プログラミング    今回はThreadPoolを使った非同期プログラムの実装方法を紹介します。
 " />
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
@@ -54,10 +54,10 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2020-05-18T22:03:16+09:00",
-        "dateModified": "2020-05-19T19:37:25+09:00",
+        "dateModified": "2020-05-28T10:23:55+09:00",
         "url": "https://kgSuzuki1994.github.io/posts/csharp-threadpool/",
-        "headline": "【C#】ThreadPoolを用いた非同期プログラミング",
-        "description": "はじめに C#で非同期プログラムを実装する場合、以下の4つの方法が用いられることが一般的です。\n Threadクラス  【C#】Threadクラスを用いた非同期プログラミング   ThreadPool  この記事   Task  【C#】Taskを用いた非同期プログラミング   async await  【C#】asyncとawaitを用いた非同期プログラミング    今回はThreadPoolを使った非同期プログラムの実装方法を紹介します。\n",
+        "headline": "【Csharp】ThreadPoolを用いた非同期プログラミング",
+        "description": "はじめに C#で非同期プログラムを実装する場合、以下の4つの方法が用いられることが一般的です。\n Threadクラス  【Csharp】Threadクラスを用いた非同期プログラミング   ThreadPool  この記事   Task  【Csharp】Taskを用いた非同期プログラミング   async await  【Csharp】asyncとawaitを用いた非同期プログラミング    今回はThreadPoolを使った非同期プログラムの実装方法を紹介します。\n",
         "inLanguage" : "ja-jp",
         "articleSection": "posts",
         "wordCount":  83 ,
@@ -91,23 +91,23 @@
 
 <meta name="twitter:card" content="summary" />
 
-<meta name="twitter:site" content="@reuixiy" />
+<meta name="twitter:site" content="@kgSuzuki" />
 <meta name="twitter:creator" content="@reuixiy" />
 
     
 
 
 
-<meta property="og:title" content="【C#】ThreadPoolを用いた非同期プログラミング" />
+<meta property="og:title" content="【Csharp】ThreadPoolを用いた非同期プログラミング" />
 <meta property="og:description" content="はじめに C#で非同期プログラムを実装する場合、以下の4つの方法が用いられることが一般的です。
- Threadクラス  【C#】Threadクラスを用いた非同期プログラミング   ThreadPool  この記事   Task  【C#】Taskを用いた非同期プログラミング   async await  【C#】asyncとawaitを用いた非同期プログラミング    今回はThreadPoolを使った非同期プログラムの実装方法を紹介します。
+ Threadクラス  【Csharp】Threadクラスを用いた非同期プログラミング   ThreadPool  この記事   Task  【Csharp】Taskを用いた非同期プログラミング   async await  【Csharp】asyncとawaitを用いた非同期プログラミング    今回はThreadPoolを使った非同期プログラムの実装方法を紹介します。
 " />
 <meta property="og:url" content="https://kgSuzuki1994.github.io/posts/csharp-threadpool/" />
 <meta property="og:site_name" content="SuzuTech" />
 <meta property="og:locale" content="en" /><meta property="og:image" content="https://kgSuzuki1994.github.io/icons/apple-touch-icon.png" />
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2020-05-18T22:03:16&#43;09:00" />
-    <meta property="article:modified_time" content="2020-05-19T19:37:25&#43;09:00" />
+    <meta property="article:modified_time" content="2020-05-28T10:23:55&#43;09:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -221,7 +221,7 @@
 
         <article class="content post" data-align="default" data-type="posts" data-toc-num="true">
 
-            <h1 class="post-title">【C#】ThreadPoolを用いた非同期プログラミング</h1>
+            <h1 class="post-title">【Csharp】ThreadPoolを用いた非同期プログラミング</h1>
 
             
 
@@ -239,7 +239,7 @@
     
     
         
-        <time datetime="2020-05-19T19:37:25&#43;09:00" class="post-meta-item modified"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2020.5.19</time>
+        <time datetime="2020-05-28T10:23:55&#43;09:00" class="post-meta-item modified"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2020.5.28</time>
     
     
     
@@ -265,7 +265,7 @@
 <ol>
 <li>Threadクラス
 <ul>
-<li><a href="https://kgsuzuki1994.github.io/posts/csharp-thread/" target="_blank" rel="noopener">【C#】Threadクラスを用いた非同期プログラミング</a></li>
+<li><a href="https://kgsuzuki1994.github.io/posts/csharp-thread/" target="_blank" rel="noopener">【Csharp】Threadクラスを用いた非同期プログラミング</a></li>
 </ul>
 </li>
 <li>ThreadPool
@@ -275,12 +275,12 @@
 </li>
 <li>Task
 <ul>
-<li><a href="https://kgsuzuki1994.github.io/posts/csharp-task/" target="_blank" rel="noopener">【C#】Taskを用いた非同期プログラミング</a></li>
+<li><a href="https://kgsuzuki1994.github.io/posts/csharp-task/" target="_blank" rel="noopener">【Csharp】Taskを用いた非同期プログラミング</a></li>
 </ul>
 </li>
 <li>async await
 <ul>
-<li><a href="https://kgsuzuki1994.github.io/posts/csharp-asyncawait/" target="_blank" rel="noopener">【C#】asyncとawaitを用いた非同期プログラミング</a></li>
+<li><a href="https://kgsuzuki1994.github.io/posts/csharp-asyncawait/" target="_blank" rel="noopener">【Csharp】asyncとawaitを用いた非同期プログラミング</a></li>
 </ul>
 </li>
 </ol>
@@ -348,9 +348,9 @@ Threadクラスを使うより比較的簡単に実装ができると思いま�
 
         
     <div class="updated-badge-container">
-        <span title="Updated @ 2020-05-19 19:37:25 JST" style="cursor:help">
+        <span title="Updated @ 2020-05-28 10:23:55 JST" style="cursor:help">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2020-05-19</text><text x="915" y="140" textLength="650" transform="scale(.1)">2020-05-19</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2020-05-28</text><text x="915" y="140" textLength="650" transform="scale(.1)">2020-05-28</text></g></svg>
         </span></div>
 
 
@@ -367,24 +367,24 @@ Threadクラスを使うより比較的簡単に実装ができると思いま�
             
                 <div class="share-item twitter">
                     
-                    <a href="https://twitter.com/share?url=https://kgSuzuki1994.github.io/posts/csharp-threadpool/&amp;text=%e3%80%90C#%e3%80%91ThreadPool%e3%82%92%e7%94%a8%e3%81%84%e3%81%9f%e9%9d%9e%e5%90%8c%e6%9c%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0&amp;hashtags=,&amp;via=reuixiy" title="Share on Twitter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon twitter-icon"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+                    <a href="https://twitter.com/share?url=https://kgSuzuki1994.github.io/posts/csharp-threadpool/&amp;text=%e3%80%90Csharp%e3%80%91ThreadPool%e3%82%92%e7%94%a8%e3%81%84%e3%81%9f%e9%9d%9e%e5%90%8c%e6%9c%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0&amp;hashtags=,&amp;via=kgSuzuki" title="Share on Twitter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon twitter-icon"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
                 </div>
             
 
+            
+                <div class="share-item facebook">
+                    
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://kgSuzuki1994.github.io/posts/csharp-threadpool/&amp;hashtag=%23" title="Share on Facebook" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon facebook-icon"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                </div>
             
 
             
                 <div class="share-item linkedin">
                     
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://kgSuzuki1994.github.io/posts/csharp-threadpool/&amp;title=%e3%80%90C#%e3%80%91ThreadPool%e3%82%92%e7%94%a8%e3%81%84%e3%81%9f%e9%9d%9e%e5%90%8c%e6%9c%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0&amp;summary=%e3%81%af%e3%81%98%e3%82%81%e3%81%ab%20C#%e3%81%a7%e9%9d%9e%e5%90%8c%e6%9c%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%82%92%e5%ae%9f%e8%a3%85%e3%81%99%e3%82%8b%e5%a0%b4%e5%90%88%e3%80%81%e4%bb%a5%e4%b8%8b%e3%81%ae4%e3%81%a4%e3%81%ae%e6%96%b9%e6%b3%95%e3%81%8c%e7%94%a8%e3%81%84%e3%82%89%e3%82%8c%e3%82%8b%e3%81%93%e3%81%a8%e3%81%8c%e4%b8%80%e8%88%ac%e7%9a%84%e3%81%a7%e3%81%99%e3%80%82%0a%20Thread%e3%82%af%e3%83%a9%e3%82%b9%20%20%e3%80%90C#%e3%80%91Thread%e3%82%af%e3%83%a9%e3%82%b9%e3%82%92%e7%94%a8%e3%81%84%e3%81%9f%e9%9d%9e%e5%90%8c%e6%9c%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%20%20%20ThreadPool%20%20%e3%81%93%e3%81%ae%e8%a8%98%e4%ba%8b%20%20%20Task%20%20%e3%80%90C#%e3%80%91Task%e3%82%92%e7%94%a8%e3%81%84%e3%81%9f%e9%9d%9e%e5%90%8c%e6%9c%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%20%20%20async%20await%20%20%e3%80%90C#%e3%80%91async%e3%81%a8await%e3%82%92%e7%94%a8%e3%81%84%e3%81%9f%e9%9d%9e%e5%90%8c%e6%9c%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%20%20%20%20%e4%bb%8a%e5%9b%9e%e3%81%afThreadPool%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%9f%e9%9d%9e%e5%90%8c%e6%9c%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%81%ae%e5%ae%9f%e8%a3%85%e6%96%b9%e6%b3%95%e3%82%92%e7%b4%b9%e4%bb%8b%e3%81%97%e3%81%be%e3%81%99%e3%80%82%0a&amp;source=SuzuTech" title="Share on LinkedIn" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon linkedin-icon"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://kgSuzuki1994.github.io/posts/csharp-threadpool/&amp;title=%e3%80%90Csharp%e3%80%91ThreadPool%e3%82%92%e7%94%a8%e3%81%84%e3%81%9f%e9%9d%9e%e5%90%8c%e6%9c%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0&amp;summary=%e3%81%af%e3%81%98%e3%82%81%e3%81%ab%20C#%e3%81%a7%e9%9d%9e%e5%90%8c%e6%9c%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%82%92%e5%ae%9f%e8%a3%85%e3%81%99%e3%82%8b%e5%a0%b4%e5%90%88%e3%80%81%e4%bb%a5%e4%b8%8b%e3%81%ae4%e3%81%a4%e3%81%ae%e6%96%b9%e6%b3%95%e3%81%8c%e7%94%a8%e3%81%84%e3%82%89%e3%82%8c%e3%82%8b%e3%81%93%e3%81%a8%e3%81%8c%e4%b8%80%e8%88%ac%e7%9a%84%e3%81%a7%e3%81%99%e3%80%82%0a%20Thread%e3%82%af%e3%83%a9%e3%82%b9%20%20%e3%80%90Csharp%e3%80%91Thread%e3%82%af%e3%83%a9%e3%82%b9%e3%82%92%e7%94%a8%e3%81%84%e3%81%9f%e9%9d%9e%e5%90%8c%e6%9c%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%20%20%20ThreadPool%20%20%e3%81%93%e3%81%ae%e8%a8%98%e4%ba%8b%20%20%20Task%20%20%e3%80%90Csharp%e3%80%91Task%e3%82%92%e7%94%a8%e3%81%84%e3%81%9f%e9%9d%9e%e5%90%8c%e6%9c%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%20%20%20async%20await%20%20%e3%80%90Csharp%e3%80%91async%e3%81%a8await%e3%82%92%e7%94%a8%e3%81%84%e3%81%9f%e9%9d%9e%e5%90%8c%e6%9c%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%20%20%20%20%e4%bb%8a%e5%9b%9e%e3%81%afThreadPool%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%9f%e9%9d%9e%e5%90%8c%e6%9c%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%81%ae%e5%ae%9f%e8%a3%85%e6%96%b9%e6%b3%95%e3%82%92%e7%b4%b9%e4%bb%8b%e3%81%97%e3%81%be%e3%81%99%e3%80%82%0a&amp;source=SuzuTech" title="Share on LinkedIn" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon linkedin-icon"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
                 </div>
             
 
-            
-                <div class="share-item telegram">
-                    
-                    <a href="https://t.me/share/url?url=https://kgSuzuki1994.github.io/posts/csharp-threadpool/&amp;text=%e3%80%90C#%e3%80%91ThreadPool%e3%82%92%e7%94%a8%e3%81%84%e3%81%9f%e9%9d%9e%e5%90%8c%e6%9c%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0" title="Share on Telegram" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon telegram-icon"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg></a>
-                </div>
             
 
             
@@ -428,15 +428,15 @@ Threadクラスを使うより比較的簡単に実装ができると思いま�
             <ul class="related-list">
                 
                     <li class="related-item">
-                        <a href="/posts/csharp-asyncawait/" class="related-link">【C#】asyncとawaitを用いた非同期プログラミング</a>
+                        <a href="/posts/csharp-asyncawait/" class="related-link">【Csharp】asyncとawaitを用いた非同期プログラミング</a>
                     </li>
                 
                     <li class="related-item">
-                        <a href="/posts/csharp-task/" class="related-link">【C#】Taskを用いた非同期プログラミング</a>
+                        <a href="/posts/csharp-task/" class="related-link">【Csharp】Taskを用いた非同期プログラミング</a>
                     </li>
                 
                     <li class="related-item">
-                        <a href="/posts/csharp-thread/" class="related-link">【C#】Threadクラスを用いた非同期プログラミング</a>
+                        <a href="/posts/csharp-thread/" class="related-link">【Csharp】Threadクラスを用いた非同期プログラミング</a>
                     </li>
                 
                     <li class="related-item">
@@ -480,12 +480,12 @@ Threadクラスを使うより比較的簡単に実装ができると思いま�
         <ul class="post-nav">
             
                 <li class="post-nav-prev">
-                    <a href="/posts/csharp-task/" rel="prev">&lt; 【C#】Taskを用いた非同期プログラミング</a>
+                    <a href="/posts/csharp-task/" rel="prev">&lt; 【Csharp】Taskを用いた非同期プログラミング</a>
                 </li>
             
             
                 <li class="post-nav-next">
-                    <a href="/posts/csharp-thread/" rel="next">【C#】Threadクラスを用いた非同期プログラミング &gt;</a>
+                    <a href="/posts/csharp-thread/" rel="next">【Csharp】Threadクラスを用いた非同期プログラミング &gt;</a>
                 </li>
             
         </ul>
@@ -509,7 +509,7 @@ Threadクラスを使うより比較的簡単に実装ができると思いま�
             
     <footer id="footer" class="footer">
         <div class="footer-inner">
-            <div class="site-info">©&nbsp;1969–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;reuixiy</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div><div class="site-copyright"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
+            <div class="site-info">©&nbsp;2020–2020&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;reuixiy</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div><div class="site-copyright"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
 
             
 

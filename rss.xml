@@ -9,7 +9,7 @@
     <channel>
         <title>SuzuTech</title>
         <link>https://kgSuzuki1994.github.io/</link>
-        <description>MemE is a powerful and highly customizable GoHugo theme for personal blogs.</description>
+        <description>SuzuTech is personal blog.</description>
         <generator>Hugo 0.70.0 https://gohugo.io/</generator>
         
             <language>ja-jp</language>
@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Thu, 28 May 2020 00:25:38 &#43;0900</lastBuildDate>
+        <lastBuildDate>Thu, 28 May 2020 10:26:12 &#43;0900</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://kgSuzuki1994.github.io/rss.xml" />
         
@@ -280,7 +280,7 @@ Once you are satisfied with your changes, run
             </item>
         
             <item>
-                <title>【C#】asyncとawaitを用いた非同期プログラミング</title>
+                <title>【Csharp】asyncとawaitを用いた非同期プログラミング</title>
                 <link>https://kgSuzuki1994.github.io/posts/csharp-asyncawait/</link>
                 <guid isPermaLink="true">https://kgSuzuki1994.github.io/posts/csharp-asyncawait/</guid>
                 <pubDate>Tue, 19 May 2020 19:34:35 &#43;0900</pubDate>
@@ -294,17 +294,17 @@ Once you are satisfied with your changes, run
 &lt;ol&gt;
 &lt;li&gt;Threadクラス
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-thread/&#34;&gt;【C#】Threadクラスを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-thread/&#34;&gt;【Csharp】Threadクラスを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;ThreadPool
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-threadpool/&#34;&gt;【C#】ThreadPoolを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-threadpool/&#34;&gt;【Csharp】ThreadPoolを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Task
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-task/&#34;&gt;【C#】Taskを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-task/&#34;&gt;【Csharp】Taskを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;async await
@@ -386,7 +386,7 @@ Once you are satisfied with your changes, run
             </item>
         
             <item>
-                <title>【C#】Taskを用いた非同期プログラミング</title>
+                <title>【Csharp】Taskを用いた非同期プログラミング</title>
                 <link>https://kgSuzuki1994.github.io/posts/csharp-task/</link>
                 <guid isPermaLink="true">https://kgSuzuki1994.github.io/posts/csharp-task/</guid>
                 <pubDate>Tue, 19 May 2020 18:00:46 &#43;0900</pubDate>
@@ -400,12 +400,12 @@ Once you are satisfied with your changes, run
 &lt;ol&gt;
 &lt;li&gt;Threadクラス
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-thread/&#34;&gt;【C#】Threadクラスを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-thread/&#34;&gt;【Csharp】Threadクラスを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;ThreadPool
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-threadpool/&#34;&gt;【C#】ThreadPoolを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-threadpool/&#34;&gt;【Csharp】ThreadPoolを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Task
@@ -415,7 +415,7 @@ Once you are satisfied with your changes, run
 &lt;/li&gt;
 &lt;li&gt;async await
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-asyncawait/&#34;&gt;【C#】asyncとawaitを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-asyncawait/&#34;&gt;【Csharp】asyncとawaitを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -503,7 +503,7 @@ Once you are satisfied with your changes, run
             </item>
         
             <item>
-                <title>【C#】ThreadPoolを用いた非同期プログラミング</title>
+                <title>【Csharp】ThreadPoolを用いた非同期プログラミング</title>
                 <link>https://kgSuzuki1994.github.io/posts/csharp-threadpool/</link>
                 <guid isPermaLink="true">https://kgSuzuki1994.github.io/posts/csharp-threadpool/</guid>
                 <pubDate>Mon, 18 May 2020 22:03:16 &#43;0900</pubDate>
@@ -517,7 +517,7 @@ Once you are satisfied with your changes, run
 &lt;ol&gt;
 &lt;li&gt;Threadクラス
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-thread/&#34;&gt;【C#】Threadクラスを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-thread/&#34;&gt;【Csharp】Threadクラスを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;ThreadPool
@@ -527,12 +527,12 @@ Once you are satisfied with your changes, run
 &lt;/li&gt;
 &lt;li&gt;Task
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-task/&#34;&gt;【C#】Taskを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-task/&#34;&gt;【Csharp】Taskを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;async await
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-asyncawait/&#34;&gt;【C#】asyncとawaitを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-asyncawait/&#34;&gt;【Csharp】asyncとawaitを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -617,7 +617,7 @@ Threadクラスを使うより比較的簡単に実装ができると思いま�
             </item>
         
             <item>
-                <title>【C#】Threadクラスを用いた非同期プログラミング</title>
+                <title>【Csharp】Threadクラスを用いた非同期プログラミング</title>
                 <link>https://kgSuzuki1994.github.io/posts/csharp-thread/</link>
                 <guid isPermaLink="true">https://kgSuzuki1994.github.io/posts/csharp-thread/</guid>
                 <pubDate>Sun, 17 May 2020 21:48:43 &#43;0900</pubDate>
@@ -636,17 +636,17 @@ Threadクラスを使うより比較的簡単に実装ができると思いま�
 &lt;/li&gt;
 &lt;li&gt;ThreadPool
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-threadpool/&#34;&gt;【C#】ThreadPoolを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-threadpool/&#34;&gt;【Csharp】ThreadPoolを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Task
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-task/&#34;&gt;【C#】Taskを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-task/&#34;&gt;【Csharp】Taskを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;async await
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-asyncawait/&#34;&gt;【C#】asyncとawaitを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kgsuzuki1994.github.io/posts/csharp-asyncawait/&#34;&gt;【Csharp】asyncとawaitを用いた非同期プログラミング&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
