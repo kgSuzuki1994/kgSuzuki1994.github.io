@@ -294,7 +294,7 @@
 <p><a href="https://kgsuzuki1994.github.io/posts/csharp-thread/" target="_blank" rel="noopener">Threadクラスを用いた非同期プログラミング</a>で作成したプログラムを修正してThreadPoolを実装します。</p>
 <p><code>Form1.cs</code>を以下のように変更します。</p>
 <div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
@@ -335,7 +335,7 @@
         <span class="n">dataGridView1</span><span class="p">.</span><span class="n">DataSource</span> <span class="p">=</span> <span class="n">result</span><span class="p">;</span>
     <span class="p">});</span>
 <span class="p">}</span>
-</code></pre></td></tr></table>
+</code></pre></td></tr></table></div>
 </div>
 </div><p><code>System.Threading.ThreadPool.QueueUserWorkItem()</code>の引数には、<code>void型</code>で引数が<code>object</code>のものが指定されている必要があります。<br>
 なので、<code>GetData</code>メソッドの引数に<code>object</code>を指定しました。</p>

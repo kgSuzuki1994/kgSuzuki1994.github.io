@@ -294,7 +294,7 @@
 <p><a href="https://kgsuzuki1994.github.io/posts/csharp-threadpool/" target="_blank" rel="noopener">ThreadPoolクラスを用いた非同期プログラミング</a>で作成したプログラムを修正してTaskを実装します。</p>
 <p><code>Form1.cs</code>を以下のように変更します。</p>
 <div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
@@ -329,7 +329,7 @@
 
     <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></td></tr></table>
+</code></pre></td></tr></table></div>
 </div>
 </div><p><code>button_Click</code>メソッドに<code>async</code>を付け、メソッド内の<code>Task.Run()</code>の前に<code>await</code>を付けました。<br>
 このように実装することで<code>GetData</code>メソッドの内容を同期的なプログラムで実装した内容から変えることなく非同期プログラムを実現することができます。</p>
