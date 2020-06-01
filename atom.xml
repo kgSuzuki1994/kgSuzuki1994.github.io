@@ -4,15 +4,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja-jp">
     <title type="text">SuzuTech</title>
     <subtitle type="html">SuzuTech is personal blog.</subtitle>
-    <updated>2020-06-01T13:13:47&#43;09:00</updated>
+    <updated>2020-06-01T14:39:58&#43;09:00</updated>
     <id>https://kgSuzuki1994.github.io/</id>
     <link rel="alternate" type="text/html" href="https://kgSuzuki1994.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://kgSuzuki1994.github.io/atom.xml" />
     <author>
-            <name>reuixiy</name>
+            <name>kgSuzuki</name>
             <uri>https://kgSuzuki1994.github.io/</uri>
-            
-                <email>reuixiy@gmail.com</email>
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.70.0">Hugo</generator>
@@ -23,9 +21,8 @@
             <updated>2020-06-01T13:13:15&#43;09:00</updated>
             <published>2020-05-31T23:25:49&#43;09:00</published>
             <author>
-                    <name>reuixiy</name>
-                    <uri>https://io-oi.me/</uri>
-                    <email>reuixiy@gmail.com</email>
+                    <name>kgSuzuki</name>
+                    <uri>https://kgSuzuki1994.github.io/</uri>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">&lt;p&gt;Kotlinの関数について学習します。&lt;/p&gt;</summary>
             
@@ -267,9 +264,8 @@
             <updated>2020-05-31T14:48:28&#43;09:00</updated>
             <published>2020-05-31T12:39:35&#43;09:00</published>
             <author>
-                    <name>reuixiy</name>
-                    <uri>https://io-oi.me/</uri>
-                    <email>reuixiy@gmail.com</email>
+                    <name>kgSuzuki</name>
+                    <uri>https://kgSuzuki1994.github.io/</uri>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">&lt;p&gt;Kotlinを学習するにあたって、基本的な文法についてまとめました。&lt;/p&gt;</summary>
             
@@ -750,9 +746,8 @@
             <updated>2020-05-28T00:24:55&#43;09:00</updated>
             <published>2020-05-27T22:21:35&#43;09:00</published>
             <author>
-                    <name>reuixiy</name>
-                    <uri>https://io-oi.me/</uri>
-                    <email>reuixiy@gmail.com</email>
+                    <name>kgSuzuki</name>
+                    <uri>https://kgSuzuki1994.github.io/</uri>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">&lt;p&gt;&lt;code&gt;git commit&lt;/code&gt;で既にコミットされた過去のコミットログを修正する方法を紹介します。&lt;/p&gt;</summary>
             
@@ -1004,9 +999,8 @@ Once you are satisfied with your changes, run
             <updated>2020-05-28T10:23:55&#43;09:00</updated>
             <published>2020-05-19T19:34:35&#43;09:00</published>
             <author>
-                    <name>reuixiy</name>
-                    <uri>https://io-oi.me/</uri>
-                    <email>reuixiy@gmail.com</email>
+                    <name>kgSuzuki</name>
+                    <uri>https://kgSuzuki1994.github.io/</uri>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;C#で非同期プログラムを実装する場合、以下の4つの方法が用いられることが一般的です。&lt;/p&gt;
@@ -1137,9 +1131,8 @@ Once you are satisfied with your changes, run
             <updated>2020-05-28T10:23:55&#43;09:00</updated>
             <published>2020-05-19T18:00:46&#43;09:00</published>
             <author>
-                    <name>reuixiy</name>
-                    <uri>https://io-oi.me/</uri>
-                    <email>reuixiy@gmail.com</email>
+                    <name>kgSuzuki</name>
+                    <uri>https://kgSuzuki1994.github.io/</uri>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;C#で非同期プログラムを実装する場合、以下の4つの方法が用いられることが一般的です。&lt;/p&gt;
@@ -1281,9 +1274,8 @@ Once you are satisfied with your changes, run
             <updated>2020-05-28T10:23:55&#43;09:00</updated>
             <published>2020-05-18T22:03:16&#43;09:00</published>
             <author>
-                    <name>reuixiy</name>
-                    <uri>https://io-oi.me/</uri>
-                    <email>reuixiy@gmail.com</email>
+                    <name>kgSuzuki</name>
+                    <uri>https://kgSuzuki1994.github.io/</uri>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;C#で非同期プログラムを実装する場合、以下の4つの方法が用いられることが一般的です。&lt;/p&gt;
@@ -1422,9 +1414,8 @@ Threadクラスを使うより比較的簡単に実装ができると思いま�
             <updated>2020-05-28T10:23:55&#43;09:00</updated>
             <published>2020-05-17T21:48:43&#43;09:00</published>
             <author>
-                    <name>reuixiy</name>
-                    <uri>https://io-oi.me/</uri>
-                    <email>reuixiy@gmail.com</email>
+                    <name>kgSuzuki</name>
+                    <uri>https://kgSuzuki1994.github.io/</uri>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;C#で非同期プログラムを実装する場合、以下の4つの方法が用いられることが一般的です。&lt;/p&gt;
