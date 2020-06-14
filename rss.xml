@@ -19,10 +19,76 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Mon, 01 Jun 2020 14:39:58 &#43;0900</lastBuildDate>
+        <lastBuildDate>Sun, 14 Jun 2020 18:59:02 &#43;0900</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://kgSuzuki1994.github.io/rss.xml" />
         
+        
+            <item>
+                <title>Kotlin Koansのすゝめ</title>
+                <link>https://kgSuzuki1994.github.io/posts/kotlin-kotlinkoans-part1/</link>
+                <guid isPermaLink="true">https://kgSuzuki1994.github.io/posts/kotlin-kotlinkoans-part1/</guid>
+                <pubDate>Fri, 12 Jun 2020 12:24:30 &#43;0900</pubDate>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;p&gt;Kotlinの学習のためKotlin Koansを実施しました。&lt;br&gt;
+これからKotlinの学習をする人向けにKotlin Koansについて簡単にまとめました。&lt;/p&gt;
+&lt;h2 id=&#34;kotlin-koans-とは&#34;&gt;Kotlin Koans とは&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://dogwood008.github.io/kotlin-web-site-ja/docs/tutorials/koans.html&#34;&gt;Kotlin Koans&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This tutorial walks you through a series of exercises to get familiar with Kotlin.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;公式が提供しているKotlinの練習問題です。&lt;br&gt;
+全部で40問ほどあり、問題を解くことでKotlinの言語仕様について学ぶことが出来ます。&lt;/p&gt;
+&lt;h2 id=&#34;学習方法&#34;&gt;学習方法&lt;/h2&gt;
+&lt;p&gt;Kotlin Koansは複数の方法で学ぶことが出来ます。&lt;/p&gt;
+&lt;h3 id=&#34;オンライン上で学習する&#34;&gt;オンライン上で学習する&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://try.kotlinlang.org/#/Kotlin%20Koans/Introduction/Hello,%20world!/Task.kt&#34;&gt;こちらのページ&lt;/a&gt;でオンライン上でコードを書きながら学習することが出来ます。&lt;br&gt;
+テストの実施や答えの確認を簡単に行うことができ、開発環境がなくても学習できるという特徴があります。
+&lt;img src=&#34;https://i.gyazo.com/67a2efa907018395db502ab403914ba2.png&#34; alt=&#34;WEBページの画像&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;リポジトリを落として学習する&#34;&gt;リポジトリを落として学習する&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Kotlin/kotlin-koans&#34;&gt;Kotlin Koans のリポジトリ&lt;/a&gt;が存在するので、ローカルに落とすことで学習することが出来ます。
+READMEに記載があるように、&lt;code&gt;gradlew&lt;/code&gt;コマンドでテストを実行できます。&lt;br&gt;
+ブランチを&lt;code&gt;resolutions&lt;/code&gt;に切り替えることで答えを確認することが出来ます。&lt;/p&gt;
+&lt;p&gt;使い慣れているIDEで問題に取り組めるのが良いですね。&lt;/p&gt;
+&lt;p&gt;今回、自分はこちらの方法で実施しました。&lt;/p&gt;
+&lt;h3 id=&#34;intellijのプラグインを使う&#34;&gt;IntelliJのプラグインを使う&lt;/h3&gt;
+&lt;p&gt;Intellij IDEA等のJetBrain製のプラグインを使った学習方法です。
+&lt;code&gt;EduTools&lt;/code&gt;とプラグインを導入することで学習出来ます。&lt;/p&gt;
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+&lt;p&gt;以上がKotlin Koansについての説明になります。&lt;/p&gt;
+&lt;p&gt;自分はintroductionを実施しました。&lt;br&gt;
+1問1答形式なので気軽に取り組むことが出来るので、おすすめです！&lt;/p&gt;
+&lt;p&gt;Kotlin Koansは、参考書等で文法について学習した次のステップとして利用できると思います。&lt;/p&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://kgSuzuki1994.github.io/categories/tech/">Tech</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://kgSuzuki1994.github.io/tags/kotlin/">Kotlin</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>【Kotlin】関数を学ぶ</title>
@@ -957,7 +1023,7 @@ Once you are satisfied with your changes, run
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;あとはファイルの修正を行い、&lt;code&gt;git rebase --continue&lt;/code&gt;でログの修正は完了です。&lt;/p&gt;
-&lt;h4 id=&#34;参考にしたサイト&#34;&gt;参考にしたサイト&lt;/h4&gt;
+&lt;h2 id=&#34;参考にしたサイト&#34;&gt;参考にしたサイト&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E6%AD%B4%E5%8F%B2%E3%81%AE%E6%9B%B8%E3%81%8D%E6%8F%9B%E3%81%88&#34;&gt;7.6 Git のさまざまなツール - 歴史の書き換え - Git&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
