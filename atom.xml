@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja-jp">
     <title type="text">SuzuTech</title>
     <subtitle type="html">SuzuTech is personal blog.</subtitle>
-    <updated>2020-06-14T18:59:02&#43;09:00</updated>
+    <updated>2020-07-06T20:52:56&#43;09:00</updated>
     <id>https://kgSuzuki1994.github.io/</id>
     <link rel="alternate" type="text/html" href="https://kgSuzuki1994.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://kgSuzuki1994.github.io/atom.xml" />
@@ -15,10 +15,67 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.70.0">Hugo</generator>
         <entry>
+            <title type="text">Intellij IDEAでLombockを使用する方法</title>
+            <link rel="alternate" type="text/html" href="https://kgSuzuki1994.github.io/posts/intellij-lombock/" />
+            <id>https://kgSuzuki1994.github.io/posts/intellij-lombock/</id>
+            <updated>2020-07-06T20:52:03&#43;09:00</updated>
+            <published>2020-07-06T20:34:56&#43;09:00</published>
+            <author>
+                    <name>kgSuzuki</name>
+                    <uri>https://kgSuzuki1994.github.io/</uri>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;Intellij IDEAは初期の状態ではLombockを使用することができません。&lt;br&gt;
+今回は、Intellij IDEAでLombokを使用する方法を紹介します。&lt;/p&gt;</summary>
+            
+                <content type="html">&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;Intellij IDEAは初期の状態ではLombockを使用することができません。&lt;br&gt;
+今回は、Intellij IDEAでLombokを使用する方法を紹介します。&lt;/p&gt;
+&lt;h2 id=&#34;lombokを有効にする方法&#34;&gt;Lombokを有効にする方法&lt;/h2&gt;
+&lt;h3 id=&#34;pluginをインストールする&#34;&gt;Pluginをインストールする&lt;/h3&gt;
+&lt;p&gt;左上の「File」 -&amp;gt; 「Settings」を選択します。&lt;br&gt;
+&lt;img src=&#34;https://gyazo.com/87fe0b2b16cb7bd92f776dcddf98c1f3.png&#34; alt=&#34;settings&#34;&gt;&lt;/p&gt;
+&lt;p&gt;「Plugins」を選択して、&lt;code&gt;Lombok&lt;/code&gt;と検索します。&lt;br&gt;
+&lt;img src=&#34;https://gyazo.com/d6018c973c2a5c3caa75bbf637cf21f8.png&#34; alt=&#34;Plugins&#34;&gt;&lt;/p&gt;
+&lt;p&gt;検索してでてきたプラグインをインストールしてください。&lt;/p&gt;
+&lt;p&gt;インストールが完了したらIntellijを再起動します。&lt;/p&gt;
+&lt;h3 id=&#34;lombokを有効にする&#34;&gt;Lombokを有効にする&lt;/h3&gt;
+&lt;p&gt;再起動したらポップアップがでてくるので、「Enable annotation processing」にチェックをいれて完了です。&lt;br&gt;
+これで&lt;code&gt;@Getter&lt;/code&gt;や&lt;code&gt;@Setter&lt;/code&gt;が使えるようになります。&lt;/p&gt;</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://kgSuzuki1994.github.io/categories/tools/" term="Tools" label="Tools" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://kgSuzuki1994.github.io/tags/intellij-idea/" term="Intellij IDEA" label="Intellij IDEA" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">Kotlin Koansのすゝめ</title>
             <link rel="alternate" type="text/html" href="https://kgSuzuki1994.github.io/posts/kotlin-kotlinkoans-part1/" />
             <id>https://kgSuzuki1994.github.io/posts/kotlin-kotlinkoans-part1/</id>
-            <updated>2020-06-14T18:58:45&#43;09:00</updated>
+            <updated>2020-07-06T20:36:30&#43;09:00</updated>
             <published>2020-06-12T12:24:30&#43;09:00</published>
             <author>
                     <name>kgSuzuki</name>

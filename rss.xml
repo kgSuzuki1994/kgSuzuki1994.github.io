@@ -19,10 +19,61 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Sun, 14 Jun 2020 18:59:02 &#43;0900</lastBuildDate>
+        <lastBuildDate>Mon, 06 Jul 2020 20:52:56 &#43;0900</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://kgSuzuki1994.github.io/rss.xml" />
         
+        
+            <item>
+                <title>Intellij IDEAでLombockを使用する方法</title>
+                <link>https://kgSuzuki1994.github.io/posts/intellij-lombock/</link>
+                <guid isPermaLink="true">https://kgSuzuki1994.github.io/posts/intellij-lombock/</guid>
+                <pubDate>Mon, 06 Jul 2020 20:34:56 &#43;0900</pubDate>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;Intellij IDEAは初期の状態ではLombockを使用することができません。&lt;br&gt;
+今回は、Intellij IDEAでLombokを使用する方法を紹介します。&lt;/p&gt;
+&lt;h2 id=&#34;lombokを有効にする方法&#34;&gt;Lombokを有効にする方法&lt;/h2&gt;
+&lt;h3 id=&#34;pluginをインストールする&#34;&gt;Pluginをインストールする&lt;/h3&gt;
+&lt;p&gt;左上の「File」 -&amp;gt; 「Settings」を選択します。&lt;br&gt;
+&lt;img src=&#34;https://gyazo.com/87fe0b2b16cb7bd92f776dcddf98c1f3.png&#34; alt=&#34;settings&#34;&gt;&lt;/p&gt;
+&lt;p&gt;「Plugins」を選択して、&lt;code&gt;Lombok&lt;/code&gt;と検索します。&lt;br&gt;
+&lt;img src=&#34;https://gyazo.com/d6018c973c2a5c3caa75bbf637cf21f8.png&#34; alt=&#34;Plugins&#34;&gt;&lt;/p&gt;
+&lt;p&gt;検索してでてきたプラグインをインストールしてください。&lt;/p&gt;
+&lt;p&gt;インストールが完了したらIntellijを再起動します。&lt;/p&gt;
+&lt;h3 id=&#34;lombokを有効にする&#34;&gt;Lombokを有効にする&lt;/h3&gt;
+&lt;p&gt;再起動したらポップアップがでてくるので、「Enable annotation processing」にチェックをいれて完了です。&lt;br&gt;
+これで&lt;code&gt;@Getter&lt;/code&gt;や&lt;code&gt;@Setter&lt;/code&gt;が使えるようになります。&lt;/p&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://kgSuzuki1994.github.io/categories/tools/">Tools</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://kgSuzuki1994.github.io/tags/intellij-idea/">Intellij IDEA</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Kotlin Koansのすゝめ</title>
