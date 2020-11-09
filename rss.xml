@@ -19,10 +19,82 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Mon, 06 Jul 2020 20:52:56 &#43;0900</lastBuildDate>
+        <lastBuildDate>Mon, 09 Nov 2020 22:52:08 &#43;0900</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://kgSuzuki1994.github.io/rss.xml" />
         
+        
+            <item>
+                <title>Windows10でDocker Desktopを導入したらコマンドエラーが起きたはなし</title>
+                <link>https://kgSuzuki1994.github.io/posts/docker-command-error/</link>
+                <guid isPermaLink="true">https://kgSuzuki1994.github.io/posts/docker-command-error/</guid>
+                <pubDate>Mon, 09 Nov 2020 22:33:24 &#43;0900</pubDate>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;p&gt;自分のWindowsマシンでDocker Desktopを導入した際に発生したエラーと解決方法を備忘録としてまとめとく。&lt;/p&gt;
+&lt;h2 id=&#34;環境&#34;&gt;環境&lt;/h2&gt;
+&lt;h3 id=&#34;自分のpc&#34;&gt;自分のPC&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;OS : Windows10 Home&lt;/li&gt;
+&lt;li&gt;OSのバージョン : 1903&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;docker-desktop&#34;&gt;Docker Desktop&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;バージョン : 2.5.0.0&lt;/li&gt;
+&lt;li&gt;Channel : stable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;エラー内容&#34;&gt;エラー内容&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;docker run&lt;/code&gt;など実行した際に以下のエラーがでた。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash:cmd&#34; data-lang=&#34;bash:cmd&#34;&gt;error during connect: Get https://192.168.99.100:2376/v1.37/version: 18 dial tcp 192.168.99.100:2376: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;解決方法&#34;&gt;解決方法&lt;/h2&gt;
+&lt;h3 id=&#34;原因&#34;&gt;原因&lt;/h3&gt;
+&lt;p&gt;自分のPCに既にVirtualBoxが導入済みだったため、Dockerと競合してしまっていた。&lt;/p&gt;
+&lt;h3 id=&#34;やったこと&#34;&gt;やったこと&lt;/h3&gt;
+&lt;p&gt;まず、Docker DesktopとVirtualBoxをアンインストール。&lt;br&gt;
+その後、Windowsの環境変数から以下を削除&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DOCKER_TLS_VERIFY&lt;/li&gt;
+&lt;li&gt;DOCKER_CERT_PATH&lt;/li&gt;
+&lt;li&gt;DOCKER_HOST&lt;/li&gt;
+&lt;li&gt;DOCKER_TOOLBOX_INSTALL_PATH&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;全部消してきれいにした後、再度Docker Desktopをインストールすることで、エラーが発生しなくなった。&lt;/p&gt;
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+&lt;p&gt;軽い気持ちで、Windows HomeでDockerを動かそうとしたら結構ハマってしまった。&lt;br&gt;
+DockerとVirtual Boxを併用するシーンは自分の利用範囲ではでてこないので、これからはDocker一筋でいこう笑&lt;/p&gt;
+&lt;h2 id=&#34;参考にしたサイト&#34;&gt;参考にしたサイト&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://forums.docker.com/t/docker-starts-but-trying-to-do-anything-results-in-error-during-connect/49007&#34;&gt;Docker starts, but trying to do anything results in “error during connect”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://kgSuzuki1994.github.io/categories/tech/">Tech</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://kgSuzuki1994.github.io/tags/docker/">Docker</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Intellij IDEAでLombockを使用する方法</title>
